@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:8005/ -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet/less" href="static/css/style.less">
+	<link rel="stylesheet/less" href="static/css/fixed_menu.css">
+	<link rel="stylesheet/less" href="static/css/swiper.min.css">
+</head>
+<body>
+<header id="header">
+	<nav>
+		<ul>
+			<li>
+				<a href="#slider">início</a>
+			</li>
+			<li>
+				<a href="#speaker">palestrantes</a>
+			</li>
+			<li>
+				<a href="#schedule">programação</a>
+			</li>
+			<li>
+				<a href="#address">local</a>
+			</li>
+			<li>
+				<a href="#sponsor">apoio</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+<section id="slider" class="swiper-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide">
+			<img src="static/img/praia-7.jpg" alt="Praias">
+		</div>
+		<div class="swiper-slide">
+			<img src="static/img/praia-5.jpg" alt="Praias">
+		</div>
+		<div class="swiper-slide">
+			<img src="static/img/praia-3.jpg" alt="Praias">
+		</div>
+	</div>
+</section>
+
+<section id="speaker">
+	<h1>Palestrantes</h1>
+	<div id="content_speaker">
+		<ul>
+			<li>
+				<div class="speaker">
+					<figure>
+						<img src="static/img/placeholder.png" alt="Palestrante">
+					</figure>
+					<h2>Nome Palestrante</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores cupiditate consequatur perspiciatis, soluta placeat esse vero, tempora temporibus libero explicabo ipsam, quia eligendi natus earum adipisci numquam sequi ea impedit.</p>
+				</div>
+			</li>
+			<li>
+				<div class="speaker">
+					<figure>
+						<img src="static/img/placeholder.png" alt="Palestrante">
+					</figure>
+					<h2>Nome Palestrante</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores cupiditate consequatur perspiciatis, soluta placeat esse vero, tempora temporibus libero explicabo ipsam, quia eligendi natus earum adipisci numquam sequi ea impedit.</p>
+				</div>
+			</li>
+			<li>
+				<div class="speaker">
+					<figure>
+						<img src="static/img/placeholder.png" alt="Palestrante">
+					</figure>
+					<h2>Nome Palestrante</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores cupiditate consequatur perspiciatis, soluta placeat esse vero, tempora temporibus libero explicabo ipsam, quia eligendi natus earum adipisci numquam sequi ea impedit.</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<section id="schedule">
+	<div id="content_schedule">
+		<h1>Cronograma</h1>
+		<table>
+			<thead>
+				<tr>
+					<td>Horário</td>
+					<td>Palestra</td>
+					<td>Palestrante</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>21:00</td>
+					<td>Tarefas Assíncronas com Celery e Django</td>
+					<td>Patrick Mazulo</td>
+				</tr>
+				<tr>
+					<td>21:00</td>
+					<td>Tarefas Assíncronas com Celery e Django</td>
+					<td>Patrick Mazulo</td>
+				</tr>
+				<tr>
+					<td>21:00</td>
+					<td>Tarefas Assíncronas com Celery e Django</td>
+					<td>Patrick Mazulo</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>
+
+<section id="address">
+	<div id="content_address">
+		<h1>Localização</h1>
+		<div id="map_address">
+			<figure>
+				<img src="static/img/map_nassau.png" alt="Mapa de localização da Nassau">
+			</figure>
+		</div>
+		<div id="info_address">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas alias nam dolorem unde nobis praesentium animi similique! Atque, obcaecati porro nostrum, nisi quam laboriosam ipsa, ea doloremque modi ipsum nobis.
+			</p>
+		</div>
+	</div>
+</section>
+
+<section id="sponsor">
+	<div id="content_sponsor">
+		<h1>Apoio &amp; Patrocínio</h1>
+		<ul>
+			<li>
+				<a href="">
+					<img src="static/img/sponsor.png" alt="Patrocínio">
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="static/img/sponsor.png" alt="Patrocínio">
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="static/img/sponsor.png" alt="Patrocínio">
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="static/img/sponsor.png" alt="Patrocínio">
+				</a>
+			</li>
+		</ul>
+	</div>
+</section>
+
+
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/less.js"></script>
+<script src="static/js/headroom.min.js"></script>
+<script src="static/js/main.js"></script>
+<script src="static/js/swiper.jquery.min.js"></script>
+<script>
+	var header = document.querySelector("#header");
+	 
+	new Headroom(header, {
+		tolerance: {
+			down : 2,
+			up : 5
+		},
+		offset : 100,
+		classes: {
+			initial: "slide",
+			pinned: "slide--reset",
+			unpinned: "slide--up"
+		}
+	}).init();
+</script>
+</body>
+</html>
