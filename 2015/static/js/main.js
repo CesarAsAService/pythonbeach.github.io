@@ -15,7 +15,7 @@ $(function() {
 			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 			if (target.length) {
 				$('html,body').animate({
-					scrollTop: target.offset().top
+					scrollTop: (target.offset().top - 70)
 				}, 1000);
 			return false;
 			}
@@ -41,3 +41,20 @@ $(function() {
 	});
 });
 
+
+// $(document).ready(function () {
+// 	var header = document.querySelector("#header");
+	 
+// 	new Headroom(header, {
+// 		tolerance: {
+// 			down : 2,
+// 			up : 5
+// 		},
+// 		offset : 100,
+// 		classes: {
+// 			initial: "slide",
+// 			pinned: "slide--reset",
+// 			unpinned: "slide--up"
+// 		}
+// 	}).init();
+// });

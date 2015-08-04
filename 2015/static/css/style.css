@@ -1,6 +1,14 @@
 .swiper-container {
   width: 100%;
-  height: 80vh;
+  height: auto;
+}
+.btn-enroll {
+  font-weight: bold;
+  padding: 15px 30px;
+  color: #fff;
+  background: #2d8ae2;
+  border-radius: 10px;
+  font-size: 1.6em;
 }
 @font-face {
   font-family: 'open_sans';
@@ -58,14 +66,22 @@ header nav ul li a {
 header nav a#pull {
   display: none;
 }
-section#slider {
-  padding-bottom: 50px;
-}
 section#slider div img {
   width: 100%;
 }
+section#slider div a.btn-enroll {
+  font-size: 2em;
+  background: #f5cf32;
+  padding: 15px 40px;
+  position: absolute;
+  z-index: 999;
+  bottom: 15%;
+  left: 5%;
+  text-transform: uppercase;
+}
 section#speaker {
   padding-bottom: 50px;
+  margin-top: -4px;
   background: #2d8ae2;
   color: #fff;
 }
@@ -163,6 +179,7 @@ section#address div#content_address div#info_address p {
   font-size: 1.6em;
   color: #fff;
   text-align: left;
+  margin-bottom: 40px;
 }
 section#address div#content_address div#map_address {
   float: right;
@@ -259,6 +276,7 @@ section#sponsor div#content_sponsor ul li:last-child {
   }
   section#schedule {
     padding-bottom: 50px;
+    height: auto;
   }
   section#schedule div#content_schedule {
     margin: 0 auto;
