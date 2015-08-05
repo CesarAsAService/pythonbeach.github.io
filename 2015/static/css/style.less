@@ -84,7 +84,7 @@ section#speaker {
 		ul {
 
 			li {
-				margin-right: 55px;
+				margin: 0 45px 30px 0;
 				vertical-align: text-top;
 				&:last-child { margin-right: 0; }
 
@@ -117,7 +117,7 @@ section#speaker {
 section#schedule {
 	padding-bottom: 50px;
 	//background: lighten(#ccc, 15%);
-	height: 60vh;
+	min-height: 60vh;
 
 	div#content_schedule {
 		.content_center(960px);
@@ -131,7 +131,7 @@ section#schedule {
 		}
 
 		table {
-			margin: 20px auto 0;
+			margin: 20px auto 40px;
 
 			thead {
 				margin-bottom: 10px;
@@ -147,12 +147,18 @@ section#schedule {
 			tbody {
 
 				tr td {
-					width: 200px;
+					width: 230px;
 					padding: 15px 0 5px;
 					font-size: 1.2em;
 					text-transform: uppercase;
 				}
 			}
+		}
+
+		p {
+			font-size: 1.2em;
+			text-align: left;
+			font-style: italic;
 		}
 	}
 }
@@ -181,10 +187,15 @@ section#address {
 			width: 425px;
 
 			p {
-				font-size: 1.6em;
 				color: #fff;
 				text-align: left;
 				margin-bottom: 40px;
+
+				span {
+					display: block;
+					font-size: 1.6em;
+					margin-bottom: 10px;
+				}
 			}
 		}
 
@@ -221,6 +232,7 @@ section#sponsor {
 
 		ul li {
 			margin: 0 30px 20px 0;
+			vertical-align: middle;
 			&:last-child { margin-right: 0; }
 		}
 	}
@@ -349,6 +361,7 @@ section#sponsor {
 					}
 				}
 			}
+			p { text-align: center; }
 		}
 	}
 
@@ -417,6 +430,7 @@ section#sponsor {
 			}
 
 			ul li {
+				vertical-align: middle;
 				display: block;
 				margin: 0 auto 20px;
 				text-align: center;
@@ -514,11 +528,15 @@ section#sponsor {
 
 				tbody {
 					tr td {
+						width: 200px;
 						padding: 15px 0 5px;
 						font-size: 1em;
 					}
 				}
 			}
+
+			p { text-align: center; }
+
 		}
 	}
 
@@ -556,6 +574,7 @@ section#sponsor {
 			}
 
 			ul li {
+				vertical-align: middle;
 				display: block;
 				margin: 0 auto 20px;
 				text-align: center;

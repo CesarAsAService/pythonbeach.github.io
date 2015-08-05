@@ -15,8 +15,8 @@
 	<meta property="og:image:height" content="567">
 	<meta property="og:type" content="website">
 
-	<link rel="stylesheet" href="static/css/style.css">
-	<!-- <link rel="stylesheet/less" href="static/css/style.less"> -->
+	<!-- <link rel="stylesheet" href="static/css/style.css"> -->
+	<link rel="stylesheet/less" href="static/css/style.less">
 	<link rel="stylesheet" href="static/css/fixed_menu.css">
 	<link rel="stylesheet" href="static/css/swiper.min.css">
 	<title>Python Beach 2015</title>
@@ -77,19 +77,39 @@
 			<li>
 				<div class="speaker">
 					<figure>
-						<img src="static/img/placeholder.png" alt="Palestrante">
+						<img src="static/img/speakers/speaker_mazulo.jpg" alt="Patrick Mazulo">
 					</figure>
-					<h2>Nome Palestrante</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores cupiditate consequatur perspiciatis, soluta placeat esse vero, tempora temporibus libero explicabo ipsam, quia eligendi natus earum adipisci numquam sequi ea impedit.</p>
+					<h2>Patrick Mazulo</h2>
+					<p>
+						Sócio e Co-Founder at Indacode. Técnico em Informática e quase Bacharel em Sistemas de Informação. Trabalha com desenvolvimento web Front-end/Back-end. Usuário e disseminador Python há pouco mais de 1 ano, passa a maior parte do seu tempo estudando web e suas tecnologias, bem como maneiras de aplicá-las no mundo real.
+					</p>
 				</div>
 			</li>
 			<li>
 				<div class="speaker">
 					<figure>
-						<img src="static/img/placeholder.png" alt="Palestrante">
+						<img src="static/img/speakers/speaker_ricardo.jpg" alt="Ricardo Meireles">
 					</figure>
-					<h2>Nome Palestrante</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores cupiditate consequatur perspiciatis, soluta placeat esse vero, tempora temporibus libero explicabo ipsam, quia eligendi natus earum adipisci numquam sequi ea impedit.</p>
+					<h2>Ricardo Meireles</h2>
+					<p>Técnico em Desenvolvimento de Software e Bacharelando em Sistemas de Informação, front-end e back-end web developer (Python e Java) com experiência no desenvolvimento de sites e aplicações. Atualmente trabalha na FoxInline com os dois ecossistemas.</p>
+				</div>
+			</li>
+			<li>
+				<div class="speaker">
+					<figure>
+						<img src="static/img/speakers/speaker_antonio.jpg" alt="Antonio Santos">
+					</figure>
+					<h2>Antonio Santos</h2>
+					<p>Antonio é professor do IFPI - Campus de Parnaíba do curso Técnico em Informática, bacharel em Ciência da Computação pela UESPI, especialista em redes de computadores. Atualmente coordenador de extensão do Campus, atua no ensino de lógica de programação, programação orientada à objetos e programação para Web. Também possui pesquisa com Arduíno e objetos de aprendizagem. Já usa Python no Ensino de Lógica de Programação há dois anos.</p>
+				</div>
+			</li>
+			<li>
+				<div class="speaker">
+					<figure>
+						<img src="static/img/speakers/speaker_aleph.jpg" alt="Aleph Melo">
+					</figure>
+					<h2>Aleph Melo</h2>
+					<p>Aleph é co-founder at Indacode, empresa de soluções tecnológicas. Está no último ano do curso de Ciência da Computação na Universidade Estadual do Piauí - UESPI. Tem como foco a área de mobile, com a nova linguagem de programação Swift, inteligência artificial, redes neurais e, claro, desenvolvimento web usando Python.</p>
 				</div>
 			</li>
 		</ul>
@@ -103,28 +123,44 @@
 			<thead>
 				<tr>
 					<td>Horário</td>
-					<td>Palestra</td>
 					<td>Palestrante</td>
+					<td>Palestra</td>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<td>21:00</td>
-					<td>Tarefas Assíncronas com Celery e Django</td>
-					<td>Patrick Mazulo</td>
+					<td>17:00h</td>
+					<td>Antonio Santos</td>
+					<td>Like a child: brincando e programando</td>
 				</tr>
 				<tr>
-					<td>21:00</td>
-					<td>Tarefas Assíncronas com Celery e Django</td>
-					<td>Patrick Mazulo</td>
+					<td>18:00h</td>
+					<td>Aleph Melo</td>
+					<td>Crawleando a web com Python</td>
 				</tr>
 				<tr>
-					<td>21:00</td>
-					<td>Tarefas Assíncronas com Celery e Django</td>
+					<td>19:00h</td>
+					<td>Ricardo Meireles</td>
+					<td>Automatizando a criação de interfaces de aplicações com Tesla</td>
+				</tr>
+				<tr>
+					<td>20:00h</td>
 					<td>Patrick Mazulo</td>
+					<td>Tarefas Assíncronas com Celery e Django</td>
+				</tr>
+				<tr>
+					<td>21:00h</td>
+					<td>Thiago Avelino</td>
+					<td>À definir</td>
 				</tr>
 			</tbody>
 		</table>
+		<p>
+			Obs.: O evento também contará com um certificado de 20h.
+		</p>
+		<p>
+			Obs 2.: Os horários poderão sofrer alterações.
+		</p>
 	</div>
 </section>
 
@@ -132,13 +168,15 @@
 	<div id="content_address">
 		<h1>Localização</h1>
 		<div id="map_address">
-			<figure>
-				<img src="static/img/map_nassau.png" alt="Mapa de localização da Nassau">
-			</figure>
+			<div style="overflow:hidden;height:364px;width:442px;">
+				<div id="gmap_canvas" style="height:364px;width:442px;"></div>
+			</div>
 		</div>
 		<div id="info_address">
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas alias nam dolorem unde nobis praesentium animi similique! Atque, obcaecati porro nostrum, nisi quam laboriosam ipsa, ea doloremque modi ipsum nobis.
+				<span>Python Beach ocorrerá na Faculdade Maurício de Nassau - Campus Parnaíba. </span>
+				<span>Localizada na Avenida Leonardo de Carvalho, BR 343, direção Luiz Correia. </span>
+				<span>Ao lado do Dunnas Shopping.</span>
 			</p>
 			<a target="blank_" class="btn-enroll" href="https://inscreva-se.herokuapp.com/">Inscreva-se</a>
 		</div>
@@ -155,8 +193,8 @@
 				</a>
 			</li>
 			<li>
-				<a href="">
-					<img src="static/img/sponsor.png" alt="Patrocínio">
+				<a href="http://www.indacode.com">
+					<img src="static/img/logo_indacode.png" alt="Indacode">
 				</a>
 			</li>
 			<li>
@@ -175,7 +213,8 @@
 
 <script src="static/js/jquery.min.js"></script>
 <script src="static/js/swiper.jquery.min.js"></script>
-<!-- <script src="static/js/less.js"></script> -->
+<script src="static/js/less.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <!-- <script src="static/js/headroom.min.js"></script> -->
 <script src="static/js/main.js"></script>
 </body>
