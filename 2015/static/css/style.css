@@ -83,6 +83,11 @@ section#slider div a.btn-enroll {
   left: 5%;
   text-transform: uppercase;
 }
+section#slider div a.btn-enroll span {
+  display: block;
+  font-size: 0.5em;
+  text-align: center;
+}
 section#speaker {
   padding-bottom: 50px;
   margin-top: -4px;
@@ -193,6 +198,11 @@ section#address div#content_address div#info_address p span {
   display: block;
   font-size: 1.6em;
   margin-bottom: 10px;
+}
+section#address div#content_address div#info_address a.btn-enroll span {
+  display: block;
+  font-size: 0.5em;
+  text-align: center;
 }
 section#address div#content_address div#map_address {
   float: right;
