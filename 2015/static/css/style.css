@@ -10,6 +10,10 @@
   border-radius: 10px;
   font-size: 1.6em;
 }
+#gmap_canvas img {
+  max-width: none !important;
+  background: none !important;
+}
 @font-face {
   font-family: 'open_sans';
   src: url('../fonts/open_sans/opensans-webfont.eot');
@@ -96,7 +100,7 @@ section#speaker div#content_speaker {
   width: 960px;
 }
 section#speaker div#content_speaker ul li {
-  margin-right: 55px;
+  margin: 0 45px 30px 0;
   vertical-align: text-top;
 }
 section#speaker div#content_speaker ul li:last-child {
@@ -123,7 +127,7 @@ section#speaker div#content_speaker ul li div.speaker p {
 }
 section#schedule {
   padding-bottom: 50px;
-  height: 60vh;
+  min-height: 60vh;
 }
 section#schedule div#content_schedule {
   margin: 0 auto;
@@ -137,7 +141,7 @@ section#schedule div#content_schedule h1 {
   margin-bottom: 50px;
 }
 section#schedule div#content_schedule table {
-  margin: 20px auto 0;
+  margin: 20px auto 40px;
 }
 section#schedule div#content_schedule table thead {
   margin-bottom: 10px;
@@ -149,10 +153,15 @@ section#schedule div#content_schedule table thead tr td {
   border-bottom: 2px #0e3c68 solid;
 }
 section#schedule div#content_schedule table tbody tr td {
-  width: 200px;
+  width: 230px;
   padding: 15px 0 5px;
   font-size: 1.2em;
   text-transform: uppercase;
+}
+section#schedule div#content_schedule p {
+  font-size: 1.2em;
+  text-align: left;
+  font-style: italic;
 }
 section#address {
   padding-bottom: 50px;
@@ -176,10 +185,14 @@ section#address div#content_address div#info_address {
   width: 425px;
 }
 section#address div#content_address div#info_address p {
-  font-size: 1.6em;
   color: #fff;
   text-align: left;
   margin-bottom: 40px;
+}
+section#address div#content_address div#info_address p span {
+  display: block;
+  font-size: 1.6em;
+  margin-bottom: 10px;
 }
 section#address div#content_address div#map_address {
   float: right;
@@ -205,6 +218,7 @@ section#sponsor div#content_sponsor h1 {
 }
 section#sponsor div#content_sponsor ul li {
   margin: 0 30px 20px 0;
+  vertical-align: middle;
 }
 section#sponsor div#content_sponsor ul li:last-child {
   margin-right: 0;
@@ -308,6 +322,9 @@ section#sponsor div#content_sponsor ul li:last-child {
     font-size: 1.2em;
     text-transform: uppercase;
   }
+  section#schedule div#content_schedule p {
+    text-align: center;
+  }
   section#address {
     padding-bottom: 50px;
     background: #f4ca19;
@@ -360,6 +377,7 @@ section#sponsor div#content_sponsor ul li:last-child {
     margin-bottom: 50px;
   }
   section#sponsor div#content_sponsor ul li {
+    vertical-align: middle;
     display: block;
     margin: 0 auto 20px;
     text-align: center;
@@ -434,8 +452,12 @@ section#sponsor div#content_sponsor ul li:last-child {
     font-size: 1em;
   }
   section#schedule div#content_schedule table tbody tr td {
+    width: 200px;
     padding: 15px 0 5px;
     font-size: 1em;
+  }
+  section#schedule div#content_schedule p {
+    text-align: center;
   }
   section#address div#content_address {
     margin: 0 auto;
@@ -464,6 +486,7 @@ section#sponsor div#content_sponsor ul li:last-child {
     font-size: 2.1em;
   }
   section#sponsor div#content_sponsor ul li {
+    vertical-align: middle;
     display: block;
     margin: 0 auto 20px;
     text-align: center;
