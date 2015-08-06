@@ -9,6 +9,7 @@
   background: #2d8ae2;
   border-radius: 10px;
   font-size: 1.6em;
+  text-align: center;
 }
 #gmap_canvas img {
   max-width: none !important;
